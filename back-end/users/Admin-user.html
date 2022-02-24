@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+</head>
+<body>
+    
+ <div class="card-body">
+     <h4>Quản Trị User</h4>
+     <table class="table table-hover">
+         <thead>
+             <th>ID</th>
+             <th>Tên</th>
+             <th>Email</th>
+             <th>Phone</th>
+             <th>Address</th>
+            <th>
+                <a href="http://127.0.0.1:5501/backend/users/add-form.html"><button class="btn btn-success">Tạo mới</button></a></th> 
+         </thead>
+         <tbody id="target">
+         </tbody>
+     </table>
+ </div>
+
+<script>
+    var url = "http://localhost:3000/user";
+    fetch(url, {
+            method: "GET"
+        }).then(function(res) {
+            return res.json(); 
+        }).then(function(data_url) {
+
+
+            var ulElement = document.querySelector('#target');
+            
+            new Promise(function (resolve, reject){
+                 var strContent = "";
+                 data_url.forEach(function (val, index){
+                    console.log(val);
+                    strContent += `
+                        <tr>
+                        <td> ${val.id} </td>
+                        <td> ${val.name} </td>
+                        <td> ${val.email} </td>
+                        <td> ${val.phone} </td>
+                        <td> ${val.address} </td>
+                        <td> 
+                            <button class="btn-del btn btn-danger btn-sm" >Xóa</button>  
+                            <button class="btn btn-warning btn-sm">Sửa</button>
+                        </td>
+                        </td>
+                        
+                        </tr>
+                        `
+                     
+                 });
+               
+
+
+                 return resolve(strContent)
+             }).then(function(data){
+                ulElement.innerHTML = data;
+                
+                var btn_delete = document.querySelector(`.btn-del`);
+                 btn_delete.addEventListener('click',(e)=>{
+                    let url_delete = 'http://localhost:3000/user/' + id;
+                    fetch(url_delete, {
+                 method: "DELETE"
+                    }).then(function(res) {
+                return res.json(); // chuyển chuỗi nhận được thành đối tượng json
+                    }).then(function(data) {
+                location.reload();
+                    });
+                 })
+             });
+             
+             
+        });
+           
+        // function DeleteRow(id) {
+        //     let url_delete = 'http://localhost:3000/user/' + id;
+        //     fetch(url_delete, {
+        //         method: "DELETE"
+        //     }).then(function(res) {
+        //         return res.json(); // chuyển chuỗi nhận được thành đối tượng json
+        //     }).then(function(data) {
+        //         location.reload();
+        //     });
+        // }
+
+    </script>
+</script>
+
+</body>
+</html>

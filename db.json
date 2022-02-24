@@ -1,0 +1,105 @@
+{
+  "product": [
+    {
+      "name": "CRIME complete DHW1",
+      "price": 5000000,
+      "old_price": 500000,
+      "quantity": 100,
+      "description": "Phần bánh đc cải tiến bằng loại bánh bản vuông, êm hơn, trục hollow nhẹ hơn 🤘🏻 ▪️Crime là 1 dòng ván tốt cho người mới chơi đã đc bán tại shop từ năm 2011. Bảo hành đổi mới nếu có lỗi",
+      "cateId": "Ván Dài",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/433/057/products/z3137504578771-bdba3f1c8697b33d9edbf7e66eddf8d8.jpg?v=1643099919000",
+      "id": 1
+    },
+    {
+      "name": "CRIME complete WKA",
+      "price": 490000,
+      "old_price": 500000,
+      "quantity": 2,
+      "description": "",
+      "cateId": "Ván Dài",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/433/057/products/z3137504541744-de8adf59bc0848eded23faa79284a4ae.jpg",
+      "id": 2
+    },
+    {
+      "name": "CRIME complete WKAA",
+      "price": 480000,
+      "old_price": 500000,
+      "quantity": 2,
+      "description": "Phần bánh đc cải tiến bằng loại bánh bản vuông, êm hơn, trục hollow nhẹ hơn 🤘🏻 ▪️Crime là 1 dòng ván tốt cho người mới chơi đã đc bán tại shop từ năm 2011. Bảo hành đổi mới nếu có lỗi",
+      "cateId": "Long Skate Board",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/433/057/products/z3137504541744-de8adf59bc0848eded23faa79284a4ae.jpg",
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Ván Ngắn"
+    },
+    {
+      "id": 2,
+      "name": "Ván Dài"
+    },
+    {
+      "name": "Long Skate Board",
+      "id": 3
+    }
+  ],
+  "transaction": [
+    {
+      "id": 1,
+      "title": "Chào ngày mới",
+      "des": "Nội dung tóm tắt bài viết",
+      "content": "Nội dung chi tiết bài viết"
+    },
+    {
+      "title": "Những Thuật Ngữ Trong Bộ Môn Trượt Ván",
+      "des": "https://seoaward.vn/wp-content/uploads/2020/05/Picture2-1.png",
+      "content": "Thuật ngữ liên quan tới ván trượt  Để có thể đồng nhất cách giao tiếp giữa những người yêu thích và thường xuyên tập trượt ván, người ta đã đưa ra một số thuật ngữ cơ bản liên quan tới các bộ phận của ván trượt. Các bạn có thể tham khảo ở dưới đây:   – Trick: Trick được sử dụng như một từ ngữ chỉ chiếc ván trượt. Khi người ta muốn nhắc tới đồ dùng, dụng cụ trong bộ môn này, người ta sẽ dùng từ Trick.   Thuật ngữ liên quan tới ván trượt bao gồm rail, local spot, trick, kicker, kicktail, tail…  – Kicker: Kicker được sử dụng để chỉ một tấm ván nhỏ hoặc chính là cái Ramp của ván trượt mà chúng ta có thể mang vác được. Thông thường, kicker sẽ được sử dụng để góp phần thúc đẩy lực bay của ván trượt khi chúng ta thực hiện một kỹ năng chuyên nghiệp nào đó.   – Kicktail/Tail: Có thể bạn chưa biết nhưng kicktail hay tail chính là phần cong lên ở phía sau Board của ván trượt. Phần cong lên này có thể giúp bạn điều khiển di chuyển của ván trượt. Trong trường hợp này, chúng ta thường sử dụng kicktail/tail để phanh ván trượt, giảm tốc độ trong quá trình di chuyển bằng ván trượt.   – Local Spot: Local Spot là một địa điểm chung mà tất cả những người yêu thích, đam mê bộ môn trượt ván có thể đến và tham gia vào các hoạt động trượt ván ở đây.   – Rail: Rail là rìa hay còn có thể gọi là ống mà người chơi thường dùng để mài hoặc trượt trên đó được. Nếu bạn đã từng theo dõi thi đấu trượt ván, bạn nhất định có thể nhìn thấy những cú trượt ván xuống đất. Những cú trượt ván này chính là nhờ rail mà làm được.   Chúng ta cần phải học thuộc những thuật ngữ này trước khi chơi trượt ván  – Nose: Nose chính là phần cong lên nhưng ngược với Tail.   – Obstacle: obstacle là chướng ngại vật mà người ta thường dùng để trượt ván trên đường phố. Những chướng ngại vật này rất có ích đối với khả năng rèn luyện của người chơi.   Thuật ngữ liên quan tới kỹ năng  Trước hết, đừng vội vàng, nếu bạn đam mê chơi trượt ván, hãy học những thuật ngữ cơ bản này thật kỹ càng nhé.   – Land: Land là gì? Land chính là từ ngữ ám chỉ bạn thực hiện thành công một kĩ thuật nào đó từ dễ tới khó.   – Bail: Ngược lại với Land, Bail là từ ngữ ám chỉ bạn không thực hiện được một kĩ thuật nào đó, dù khó hay dễ.  Để nâng cao kỹ năng từng bước, các bạn cần học những thuật ngữ này trước tiên  – Pop: Pop được dùng khi có âm thanh trượt ván đập xuống đất. Âm thanh này thường sẽ xuất hiện khi người chơi thực hiện một kĩ thuật nào đó.   – Sketchy: Sketchy được miêu tả trong trường hợp mà bạn chơi bị miết bánh trượt ván. Trường hợp này thường xảy ra khi bạn thực hiện một kỹ thuật nào đó nhưng không vững khiến ván trượt bị lệch và bánh bị miết.   – Clean: Không còn gì nghi ngờ nữa, clean chính từ từ ngữ được sử dụng khi bạn thực hiện vô cùng thành công và chuẩn xác kĩ thuật của trò chơi trượt ván này.   – Talk Shit: Thuật ngữ này khá thú vị bởi nó ám chỉ việc người chơi đi trượt ván nhưng không trượt mà chỉ ngồi tám chuyện với đám bạn trượt.   – Crack: Crack là thuật ngữ được sử dụng khi chiếc ván trượt của bạn có khả năng bị gãy.   –  Crash: Gần tương tự như Crack, người ta thường sử dụng Crash khi chiếc ván trượt của bạn đã thực sự bị gãy.   – Steezy: Steezy có nghĩa là bạn đã thực hiện thành công một kỹ thuật nào đó mà không mất quá nhiều nỗ lực, dáng trượt nhẹ nhàng.   – Primo: Primo có nghĩa là bạn thực hiện land lên thành của chiếc ván thành công. ",
+      "id": 2
+    }
+  ],
+  "user": [
+    {
+      "name": "Phạm Văn Khánh",
+      "email": "admin@gmail.com",
+      "phone": "0584677817",
+      "address": "Vinh",
+      "id": 1
+    },
+    {
+      "name": "Khánh Phạm",
+      "email": "kpham2874@gmail.com",
+      "phone": "0584677817",
+      "address": "Vinh",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "ok"
+    },
+    {
+      "id": 2,
+      "content": " cũng ok"
+    }
+  ],
+  "posts": [
+    {
+      "img": "Những Kí Hiệu Trong Trượt Ván",
+      "content": "– Pop: Pop được dùng khi có âm thanh trượt ván đập xuống đất. Âm thanh này thường sẽ xuất hiện khi người chơi thực hiện một kĩ thuật nào đó.   – Sketchy: Sketchy được miêu tả trong trường hợp mà bạn chơi bị miết bánh trượt ván. Trường hợp này thường xảy ra khi bạn thực hiện một kỹ thuật nào đó nhưng không vững khiến ván trượt bị lệch và bánh bị miết. ",
+      "id": 2
+    }
+  ],
+  "contacts": [
+    {
+      "id": 2,
+      "name": "Phạm Văn Khánh",
+      "address": "Vinh",
+      "sdt": "0584677817",
+      "email": "kpham2874@gmail.com",
+      "message": "ừ thì quá khứ kia của em anh ko hề quan tâm tới"
+    }
+  ]
+}
