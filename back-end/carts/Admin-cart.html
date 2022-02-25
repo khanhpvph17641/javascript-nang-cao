@@ -268,7 +268,6 @@
 
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
@@ -300,7 +299,7 @@
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="http://127.0.0.1:5500/back-end/categories/Admin-category.html">
-              <i class="bi bi-circle"></i><span>Danh Sách</span>
+              <i class="bi bi-circle"></i><span>Danh sách</span>
             </a>
           </li>
           <li>
@@ -331,13 +330,11 @@
           <i class="bi bi-bar-chart"></i><span>Quản Trị Giỏ Hàng</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-            <li>
-              <a href="http://127.0.0.1:5500/back-end/carts/Admin-cart.html">
-                <i class="bi bi-circle"></i><span>Danh Sách</span>
-              </a>
-            </li>
-          </ul>
+          <li>
+            <a href="http://127.0.0.1:5500/back-end/carts/Admin-cart.html">
+              <i class="bi bi-circle"></i><span>Danh Sách</span>
+            </a>
+          </li>
         </ul>
       </li><!-- End Charts Nav -->
 
@@ -361,7 +358,7 @@
 
       
 
-  </aside><!-- End Sidebar-->
+  </aside><
 
   <main id="main" class="main">
 
@@ -369,18 +366,18 @@
 
     <section class="section dashboard">
       <div class="card-body">
-        <h4>Quản Lý Sản Phẩm</h4>
+        <h4>Quản Lý Danh Mục</h4>
         <table class="table table-hover">
             <thead>
                 <th>ID</th>
-                <th>Tên Sản Phẩm</th>
-                <th>Giá Cũ</th>
-                <th>Giá</th>
-                <th>Số Lượng</th>
-                <th>Thuộc Loại</th>
-                <th>Ảnh</th>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Lời Nhắn</th>
+                <th>Tình Trạng Đơn Hàng</th>
+                <!-- <th>Phone</th> -->
                <th>
-                   <a href="http://127.0.0.1:5500/back-end/products/add-form.html"><button class="btn btn-success">Tạo mới</button></a></th> 
+                   <a href="http://127.0.0.1:5500/back-end/categories/add-form.html"><button class="btn btn-success">Tạo mới</button></a></th> 
             </thead>
             <tbody id="target">
             </tbody>
@@ -388,7 +385,7 @@
     </div>
    
    <script>
-       var url = "http://localhost:3000/product";
+       var url = "http://localhost:3000/orders";
        fetch(url)
        .then(res =>res.json())
        .then(data =>{
@@ -399,18 +396,17 @@
        table = document.querySelector('#target');
        render = (prd) =>{
            str = `
-           <tr data-id = '${prd.id}'>
+                        <tr data-id = '${prd.id}'>
                            <td> ${prd.id} </td>
                            <td> ${prd.name} </td>
-                           <td> ${prd.old_price} </td>
-                           <td> ${prd.price} </td>
-                           <td> ${prd.quantity} </td>
-                           <td> ${prd.cateId}  </td>
-                           <td> <img src="${prd.image}" width="100px"> </td>
+                           <td> ${prd.email} </td>
+                           <td> ${prd.phone} </td>
+                           <td> ${prd.bill} </td>
+                           <td> ${prd.status} </td>
+                          
                            <td> 
-                               <a class="btn-del btn btn btn-danger ">Xóa</a>
+                               <a class="btn-del btn btn btn-danger">Xóa</a>
                                <a class="btn-edit btn-warning btn">Sửa</a>
-                           </td>
                            </td>
                            
                            </tr>
@@ -430,11 +426,11 @@
                        const btn_edit = document.querySelector( `[ data-id = '${prd.id}'] .btn-edit `);
                            btn_edit .addEventListener('click',(e)=>{
                                console.log('edit ');
-                       //         fetch(`${url}/${prd.id}`,{
-                       //     method :'delete'
-                       //  })
-                       //  .then(res =>res.json())
-                       //  .then(()=>location.reload(alert("Xóa Thành Công")))
+                               fetch(`${url}/${prd.id}`,{
+                           method :'delete'
+                        })
+                        .then(res =>res.json())
+                        .then(()=>location.reload(alert("Xóa Thành Công")))
                         })
        }
       

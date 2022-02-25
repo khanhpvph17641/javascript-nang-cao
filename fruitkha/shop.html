@@ -197,8 +197,8 @@
 								${sp.name}
 							</h3>
 							<p class="product-price"><span>Giá Cũ : ${sp.old_price}</span> ${sp.price} </p>
-							<a href="http://127.0.0.1:5500/fruitkha/index.html" class="cart-btn">
-							<img  onclick="themVaoGio(${sp.id},'${sp.name}','${sp.price}','${sp.image}')" >
+							<a href="http://127.0.0.1:5500/fruitkha/cart.html" class="cart-btn" onclick="AddCart(${sp.id},'${sp.name}',${sp.price},'${sp.image}')">
+							
 							Mua
 							</a>
 							</div>
@@ -223,34 +223,22 @@
 			</script>
 			<script>
 				// thêm sp vào gio hàng
-				function themVaoGio(id,ten,gia,hinh){
-					const carts = JSON.parse(localStorage.getItem("cart"));
-					if(carts == null){
-						carts = {};
-						carts.push({id:id, name:ten, price:gia, image:hinh, quantity:1});
+				function AddCart(id, ten, gia, hinh){
+					var cart = JSON.parse(localStorage.getItem("cart"));
+					if(cart == null){
+						cart = [];
+						cart.push({id:id, name:ten, price:gia, image:hinh, quantity:1});
 					}
 					else{
-						let 	item = carts.find(item=>item.id===id);
+						let item = cart.find(item => item.id===id);
 						if(item) item.quantity++;
 						else cart.push({id:id, name:ten, price:gia, image:hinh, quantity:1})
 					}
-					localStorage.setItem("cart",JSON.stringify(cart));
+					localStorage.setItem("cart", JSON.stringify(cart));
 				}
 			</script>
 
-			<!-- <div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="pagination-wrap">
-						<ul>
-							<li><a href="#">Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li><a class="active" href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Next</a></li>
-						</ul>
-					</div>
-				</div>
-			</div> -->
+			
 		</div>
 	</div>
 	<!-- end products -->

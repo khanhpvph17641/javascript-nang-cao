@@ -147,79 +147,10 @@
 	<!-- contact form -->
 	<div class="contact-from-section mt-150 mb-150">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 mb-5 mb-lg-0">
-					<div class="form-title">
-						<h2>Bạn Muốn Liên Hệ Gì Với Chúng Tôi</h2>
-						
-					</div>
-					<!-- <div id="form_status"></div> -->
-					<div class="contact-form">
-						<form action="">
-							<p>
-								<input type="text" placeholder="Name" name="name">
-								<input type="email" placeholder="Email" name="email">
-							</p>
-							<p>
-								<input type="tel" placeholder="Phone" name="sdt">
-								<input type="text" placeholder="Địa Chỉ" name="address">
-							</p>
-							<p><textarea name="message" cols="30" rows="10"
-									placeholder="Message"></textarea></p>
-							
-							<p>
-								<button onclick="AddNew()" type="submit" class="btn btn-primary" value="Submit">Gửi</button>
-							</p>
-						</form>
-					</div>
-				</div>
-				<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-				<script>
-					function AddNew() {
-						var name = document.querySelector('input[name=name]').value;
-						var email = document.querySelector('input[name=email]').value;
-						var sdt= document.querySelector('input[name=sdt]').value;
-						var address= document.querySelector('input[name=address]').value;
-						var message = document.querySelector('textarea[name=message]').value;
-						
-						// var hinh_anh = document.querySelector('#img_preview').getAttribute('src');
-						//2. Kiểm tra hợp lệ
-
-						//3. Gửi dữ liệu lên server
-						opt = {
-							url: 'http://localhost:3000/contacts',
-							method: 'post',
-							data: {
-								name: name,
-								email: email,
-								sdt: Number(sdt),
-								message: message,
-								address:address
-							}
-						}
-
-						axios(opt);
-						// alert('Gửi Thành Công')
-						window.location.href = 'http://127.0.0.1:5500/back-end/products/Admin-product.html';
-					}
-				</script>
-				<div class="col-lg-4">
-					<div class="contact-form-wrap">
-						<div class="contact-form-box">
-							<h4><i class="fas fa-map"></i> Shop Address</h4>
-							<p>34/8, East Hukupara <br> Gifirtok, Sadan. <br> Country Name</p>
-						</div>
-						<div class="contact-form-box">
-							<h4><i class="far fa-clock"></i> Shop Hours</h4>
-							<p>MON - FRIDAY: 8 to 9 PM <br> SAT - SUN: 10 to 8 PM </p>
-						</div>
-						<div class="contact-form-box">
-							<h4><i class="fas fa-address-book"></i> Contact</h4>
-							<p>Phone: +00 111 222 3333 <br> Email: support@fruitkha.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+			
 		</div>
 	</div>
 	<!-- end contact form -->
@@ -227,9 +158,59 @@
 	<!-- find our location -->
 	<div class="find-location blue-bg">
 		<div class="container">
+			<form action="">
+			<div class="form-group">
+				<br>
+					<input type="text" name="name" id="" class="form-control" placeholder="Họ Tên" aria-describedby="helpId">
+					<br>
+					<input type="text" name="email" id="" class="form-control" placeholder="Email" aria-describedby="helpId">
+					<br>
+					<input type="text" name="sdt" id="" class="form-control" placeholder="Số Điện Thoại" aria-describedby="helpId">
+					<br>
+					<textarea  cols="30" rows="10" type="text" name="message" id="message" class="form-control" placeholder="Lời Nhắn" aria-describedby="helpId">
+					</textarea>
+					<br>
+
+					<button  type="button" class="btn btn-success" onclick="send()"> Gửi </button>
+				  </div>
+				</form>
+				  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+				  <script>
+             
+                
+					function send(){
+						var name = document.querySelector('input[name=name]').value;
+						var email = document.querySelector('input[name=email]').value;
+						var sdt = document.querySelector('input[name=sdt]').value;
+						var message = document.querySelector('#message').value;
+						
+						 // var hinh_anh = document.querySelector('#img_preview').getAttribute('src');
+						//2. Kiểm tra hợp lệ
+				
+						//3. Gửi dữ liệu lên server
+						opt = {
+							url: 'http://localhost:3000/contacts',
+							method:'post',
+							data:{
+								name: name,
+								email: email,
+								sdt: sdt,
+								message: message
+								
+							}
+						}
+						
+						axios(opt);
+					   
+						alert('Gửi Thành Công')
+					}
+				
+				</script>
 			<div class="row">
+				
 				<div class="col-lg-12 text-center">
-					<p> <i class="fas fa-map-marker-alt"></i> Find Our Location</p>
+					<p> <i class="fas fa-map-marker-alt"></i> </p>
+					
 				</div>
 			</div>
 		</div>

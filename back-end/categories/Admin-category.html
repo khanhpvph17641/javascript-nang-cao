@@ -330,42 +330,29 @@
           <i class="bi bi-bar-chart"></i><span>Quản Trị Giỏ Hàng</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Chart.js</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span>ApexCharts</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>ECharts</span>
-            </a>
-          </li>
+          <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="http://127.0.0.1:5500/back-end/carts/Admin-cart.html">
+                <i class="bi bi-circle"></i><span>Danh Sách</span>
+              </a>
+            </li>
+          </ul>
         </ul>
       </li><!-- End Charts Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Quản Trị Bình Luận</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-gem"></i><span>Quản Trị Bài Viết</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+            <a href="http://127.0.0.1:5500/back-end/posts/Admin-posts.html">
+              <i class="bi bi-circle"></i><span>Danh sách</span>
             </a>
           </li>
           <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
+            <a href="http://127.0.0.1:5500/back-end/posts/add-form.html">
+              <i class="bi bi-circle"></i><span>Thêm</span>
             </a>
           </li>
         </ul>
@@ -406,7 +393,7 @@
        table = document.querySelector('#target');
        render = (prd) =>{
            str = `
-           <tr data-id = '${prd.id}'>
+                        <tr data-id = '${prd.id}'>
                            <td> ${prd.id} </td>
                            <td> ${prd.name} </td>
                           

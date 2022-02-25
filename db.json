@@ -29,6 +29,16 @@
       "cateId": "Long Skate Board",
       "image": "https://bizweb.dktcdn.net/thumb/large/100/433/057/products/z3137504541744-de8adf59bc0848eded23faa79284a4ae.jpg",
       "id": 3
+    },
+    {
+      "name": "DEATHWISH TEAM GANG LOGO BRICKS DECK 8.0",
+      "price": 550000,
+      "old_price": 650000,
+      "quantity": 10,
+      "description": "",
+      "cateId": "Long Skate Board",
+      "image": "https://cdn.shopify.com/s/files/1/1578/1281/products/FA20WEBDeckPhotos22_1800x1800_1024x1024_3834277d-837b-4f5e-b2dc-70596d2f5af6_1024x1024.jpg?v=1629909955",
+      "id": 4
     }
   ],
   "categories": [
@@ -43,6 +53,10 @@
     {
       "name": "Long Skate Board",
       "id": 3
+    },
+    {
+      "name": "Ván 11",
+      "id": 4
     }
   ],
   "transaction": [
@@ -100,6 +114,25 @@
       "sdt": "0584677817",
       "email": "kpham2874@gmail.com",
       "message": "ừ thì quá khứ kia của em anh ko hề quan tâm tới"
+    },
+    {
+      "name": "Phạm Văn Khánh",
+      "email": "admin@gmail.com",
+      "sdt": "0584677817",
+      "message": "\t\t\tanh chẳng cần mang grill nhưng vẫn thấy sáng chói\n\t\t",
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "name": "Phạm Văn Khánh",
+      "email": "kpham2874@gmail.com",
+      "phone": "0584677817",
+      "address": "Vinh",
+      "bill": "ok",
+      "created_at": "2022-02-25",
+      "status": "Chờ Xác Nhận",
+      "id": 1
     }
   ]
 }
